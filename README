@@ -12,11 +12,25 @@
 ======================================================================
   
   Current Features:
-    [+] basic IRC Network,Channel Connector
-
+    [+] basic IRC Network, Channel Connector
+    [+] YAML Config Support
+    [+] Help ~ 'abbot: help'
+    [+] Babbler ~ 'abbot: babble'
+    [+] Quote
+    [+] URL Un-Shortener
+  
 ======================================================================
 
   Future Roadmap:
+    [+] google
+    [+] whois
+    [+] nslookup
+    [+] ycombinator
+    [+] twitter
+    [+] reddit
+    [+] slashdot
+    [+] stackoverflow
+    [+] github
 
 ======================================================================
   http://github.com/abhishekkr
