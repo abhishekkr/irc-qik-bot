@@ -17,7 +17,7 @@ module IRCWebHandler
   end
 
   def self.http_requester(httpurl, node)
-#    begin
+    begin
       uri = URI.parse(httpurl)
       http = Net::HTTP.new(uri.host, uri.port)
       case httpurl[5] #checking if https is there
@@ -27,10 +27,9 @@ module IRCWebHandler
       #http.verify_mode = OpenSSL::SSL::VERIFY_NONE if http.use_ssl
       request = Net::HTTP::Get.new(uri.request_uri)
       response = http.request(request)
-#    rescue
-#      response = nil
-#    end
-p response.body
+    rescue
+      response = nil
+    end
     XMLMotor.get_node_from_content response.body, node
   end
 

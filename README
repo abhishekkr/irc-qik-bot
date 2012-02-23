@@ -13,19 +13,22 @@
     $ bundle install --path .bundle
     $ bundle exec rake irc:abbot:join IRC="irc.freenode.com" CHANNEL="#ruby" NICK="abbot"
 ======================================================================
+
+    usage currently require the 'bot nick' to be used; 
+    will also pin it to conventional !command
   
   Current Features:
     [+] basic IRC Network, Channel Connector
-    [+] YAML Config Support
-    [+] Help ~ 'abbot: help'
-    [+] Babbler ~ 'abbot: babble'
-    [+] Quote
-    [+] URL Un-Shortener
+    [+] Help             ~ 'abbot: help'
+    [+] Babbler          ~ 'abbot: babble'
+    [+] Quote            ~ 'abbot: quote'
+    [+] URL Un-Shortener ~ 'abbot: unshort http://SHORT_URL'
+    [+] google           ~ 'abbot: google search term'
   
 ======================================================================
 
   Future Roadmap:
-    [+] google
+    [+] YAML Config Support
     [+] whois
     [+] nslookup
     [+] ycombinator
