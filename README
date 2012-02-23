@@ -9,14 +9,31 @@
 
   IRC ~ Automated Babbling Bot
 
+  How To Use:
+    $ bundle install --path .bundle
+    $ bundle exec rake irc:abbot:join IRC="irc.freenode.com" CHANNEL="#ruby" NICK="abbot"
 ======================================================================
   
   Current Features:
-    [+] basic IRC Network,Channel Connector
-
+    [+] basic IRC Network, Channel Connector
+    [+] YAML Config Support
+    [+] Help ~ 'abbot: help'
+    [+] Babbler ~ 'abbot: babble'
+    [+] Quote
+    [+] URL Un-Shortener
+  
 ======================================================================
 
   Future Roadmap:
+    [+] google
+    [+] whois
+    [+] nslookup
+    [+] ycombinator
+    [+] twitter
+    [+] reddit
+    [+] slashdot
+    [+] stackoverflow
+    [+] github
 
 ======================================================================
   http://github.com/abhishekkr
