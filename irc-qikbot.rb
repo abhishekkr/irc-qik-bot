@@ -2,9 +2,9 @@
 
 require File.join File.dirname(File.expand_path __FILE__), "irc-motor.rb"
 
-module IRCAbbot
+module IRCQikbot
 
-  def self.demo(irc_svr="irc.freenode.com", irc_chanl="#ruby", irc_nick="abbot")
+  def self.demo(irc_svr="irc.freenode.com", irc_chanl="#ruby", irc_nick="qbot")
     begin
       IRCMotor.connect irc_svr
       IRCMotor.join_channel irc_chanl, irc_nick

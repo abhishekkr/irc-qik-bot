@@ -11,14 +11,14 @@ module IRCAutoBabble
   def self.quote(args)
     dat = from_file "datastore/babble_quotes"
     return dat unless dat.nil?
-    "Abbot is still thinking."
+    "Philosopher is still thinking."
   end
 
   def self.helper(args)
-    return <<-IRC_ABBOT_HELP
+    return <<-IRC_QIKBOT_HELP
       *******************************
-      | IRC-ABbot                   |
-      |   its IRC Automated Babbler |
+      | IRC-Qikbot                  |
+      |   its Qik, Easy, Extensible |
       | \\ Command-Set:              |
       |  |> hi/hey/hello            |
       |  |> babble BABBLE_ABOUT     |
@@ -27,9 +27,9 @@ module IRCAutoBabble
       |  |> google SEARCH_TERMS     |
       | talk to me, with my name    |
       |   like                      |
-      |     > abbot: google irc-bot |
+      |     > qbot: google irc-bot |
       *******************************
-      IRC_ABBOT_HELP
+      IRC_QIKBOT_HELP
   end
 
   private

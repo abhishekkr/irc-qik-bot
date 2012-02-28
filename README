@@ -1,17 +1,17 @@
 ======================================================================
-   ____  _    __        _    _             ,,
-    ||  ||)) // ' __   /|\  ||)) ||       ====
-   _||_ ||\\ \\_,     //-\\ ||)) ||)) (()) ||_
+   ____  _    __       ___    ,, ,, ,,   ,,        ,,
+    ||  ||)) // ' __  // \\_  || ||// _  ||       ====
+   _||_ ||\\ \\_,     \\_//\\ || ||\\    ||)) (()) ||_
 
 ======================================================================
-  IRC-ABbot                                  version 0.0.1 beta
+  IRC-Qik-Bot                                  version 0.0.1 beta
 ======================================================================
 
   IRC ~ Automated Babbling Bot
 
   How To Use:
     $ bundle install --path .bundle
-    $ bundle exec rake irc:abbot:join IRC="irc.freenode.com" CHANNEL="#ruby" NICK="abbot"
+    $ bundle exec rake irc:qikbot:join IRC="irc.freenode.com" CHANNEL="#ruby" NICK="qbot"
 ======================================================================
 
     usage currently require the 'bot nick' to be used; 
@@ -19,11 +19,11 @@
   
   Current Features:
     [+] basic IRC Network, Channel Connector
-    [+] Help             ~ 'abbot: help'
-    [+] Babbler          ~ 'abbot: babble'
-    [+] Quote            ~ 'abbot: quote'
-    [+] URL Un-Shortener ~ 'abbot: unshort http://SHORT_URL'
-    [+] google           ~ 'abbot: google search term'
+    [+] Help             ~ 'qbot: help'
+    [+] Babbler          ~ 'qbot: babble'
+    [+] Quote            ~ 'qbot: quote'
+    [+] URL Un-Shortener ~ 'qbot: unshort http://SHORT_URL'
+    [+] google           ~ 'qbot: google search term'
   
 ======================================================================
 

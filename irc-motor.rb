@@ -24,7 +24,7 @@ module IRCMotor
     @irc.send "#{msg}\n", 0
   end
 
-  def self.join_channel(irc_chanl, irc_nick="abbot")
+  def self.join_channel(irc_chanl, irc_nick="qbot")
     channel irc_chanl
     nick irc_nick
     ircsend "USER irc ab bot :joining you"
