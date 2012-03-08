@@ -58,6 +58,11 @@ module IRCMotor
     IRCChannelHandler.response self, irc_stream
   end
 
+  def self.ymlconf
+    require 'yaml'
+    YAML.load_file(File.join File.dirname(File.expand_path __FILE__), "irc.yaml")
+  end
+
   if ENV["VERBOSE"]=="1"
     def self.err(msg)
       STDERR.puts "ERROR: #{msg}"

@@ -1,0 +1,11 @@
+network:
+     default:
+          server : "irc.freenode.com"
+          channel: "#qikbot"
+          nick   : "qbot"
+     "irc.freenode.com":
+          default:
+               channel: "#qikbot"
+               nick   : "qbot"
+          "#ruby":
+               nick: "quby"

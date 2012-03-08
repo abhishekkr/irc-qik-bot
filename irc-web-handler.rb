@@ -7,7 +7,6 @@ require "uri"
 require "xml-motor"
 
 module IRCWebHandler
-
   def self.google(search_terms)
     http_requester("http://www.google.com/search?q=#{search_terms.split.join("+")}", "div.div.cite").first.split("<").collect{|y| y.split(">")}.collect{|z| z[1]}.join
   end
