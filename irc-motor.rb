@@ -27,7 +27,7 @@ module IRCMotor
   def self.join_channel(irc_chanl, irc_nick="qbot")
     channel irc_chanl
     nick irc_nick
-    ircsend "USER irc ab bot :joining you"
+    ircsend "USER irc qik bot :#{ENV['USERNAME']} qbot"
     ircsend "NICK #{nick}"
     ircsend "JOIN #{channel}"
   end
