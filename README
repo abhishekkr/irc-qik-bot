@@ -24,11 +24,11 @@
     [+] Quote            ~ 'qbot: quote'
     [+] URL Un-Shortener ~ 'qbot: unshort http://SHORT_URL'
     [+] google           ~ 'qbot: google search term'
+    [+] YAML Config Support
   
 ======================================================================
 
   Future Roadmap:
-    [+] YAML Config Support
     [+] whois
     [+] nslookup
     [+] ycombinator
