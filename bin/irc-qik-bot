@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require File.join File.dirname(File.expand_path __FILE__), '..', 'lib', 'irc-qik-bot.rb'
+
+# Start the IRC QikBot at given IRC="irc.network" CHANNEL="#channel" NICK="mynick"
+
+print "IRC Server   : #{ENV['IRC']} "
+irc     = ENV['IRC'] || STDIN.gets
+print "Join #Channel: #{ENV['CHANNEL']} "
+channel = ENV['CHANNEL'] || STDIN.gets
+print "IRC NickName : #{ENV['NICK']} "
+nick    = ENV['NICK'] || STDIN.gets
+IRC::Qikbot.chat irc.chomp, channel.chomp, nick.chomp
