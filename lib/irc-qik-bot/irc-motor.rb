@@ -64,8 +64,9 @@ module IRC
 
     def self.ymlconf
       require 'yaml'
-      resource_dir = File.join(File.dirname(File.expand_path __FILE__), '..', '..', 'resource')
-      YAML.load_file(resource_dir, "irc.yaml")
+      resource_dir  = File.expand_path File.join(File.dirname(__FILE__), '..', '..', 'resource')
+      irc_yaml      = File.join resource_dir, 'irc.yaml'
+      YAML.load_file irc_yaml
     end
 
     if ENV["VERBOSE"]=="1"

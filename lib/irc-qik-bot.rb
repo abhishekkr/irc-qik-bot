@@ -8,7 +8,7 @@ end
 module IRC
   module Qikbot
 
-    def self.demo(irc_svr, irc_chanl, irc_nick)
+    def self.chat(irc_svr = nil, irc_chanl = nil, irc_nick = nil)
       begin
         if irc_svr.nil?
           cnf       = IRC::Motor.ymlconf["network"]["default"]
@@ -19,7 +19,7 @@ module IRC
           cnf       = IRC::Motor.ymlconf["network"][irc_svr]["default"]
           irc_chanl = cnf["channel"]
           irc_nick  = cnf["nick"]
-        elsif nick.nil?
+        elsif irc_nick.nil?
           cnf       = IRC::Motor.ymlconf["network"][irc_svr][irc_chanl]["nick"]
           irc_nick  = cnf["nick"]
         end
