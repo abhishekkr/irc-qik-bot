@@ -1,6 +1,6 @@
 # irc-handlers
 
-irc_libs = File.join(File.dirname(File.expand_path __FILE__), 'handlers', '*.rb')
+irc_libs = File.join(File.dirname(File.expand_path __FILE__), '*', '*.rb')
 Dir.glob(irc_libs).each do |lib|
   require lib
 end
