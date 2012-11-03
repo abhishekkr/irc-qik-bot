@@ -20,8 +20,7 @@ module IRC
           irc_chanl = cnf["channel"]
           irc_nick  = cnf["nick"]
         elsif irc_nick.nil?
-          cnf       = IRC::Motor.ymlconf["network"][irc_svr][irc_chanl]["nick"]
-          irc_nick  = cnf["nick"]
+          irc_nick  = IRC::Motor.ymlconf["network"][irc_svr][irc_chanl]["nick"]
         end
         IRC::Motor.connect irc_svr
         IRC::Motor.join_channel irc_chanl, irc_nick

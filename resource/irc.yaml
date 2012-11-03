@@ -6,6 +6,12 @@ network:
      "irc.freenode.com":
           default:
                channel: "#qikbot"
-               nick   : "qbot"
+               nick: "qbot"
           "#ruby":
                nick: "quby"
+          "#puppet":
+               nick: "master-o-p"
+          "#regex":
+               nick: "reg-x"
+          "#qikbot":
+               nick: "qbot"

@@ -3,10 +3,21 @@ require File.join File.dirname(File.expand_path __FILE__), '..', 'lib', 'irc-qik
 
 # Start the IRC QikBot at given IRC="irc.network" CHANNEL="#channel" NICK="mynick"
 
-print "IRC Server   : #{ENV['IRC']} "
-irc     = ENV['IRC'] || STDIN.gets
-print "Join #Channel: #{ENV['CHANNEL']} "
-channel = ENV['CHANNEL'] || STDIN.gets
-print "IRC NickName : #{ENV['NICK']} "
-nick    = ENV['NICK'] || STDIN.gets
-IRC::Qikbot.chat irc.chomp, channel.chomp, nick.chomp
+if ARGV.size > 0
+  if ARGV[0].match(/chat/)
+    IRC::Qikbot.chat
+  else
+    server  = ARGV[0]
+    channel = ARGV[1]
+    nick    = ARGV[2]
+    IRC::Qikbot.chat server, channel, nick
+  end
+else
+  print "IRC Server   : #{ENV['IRC']} "
+  irc     = ENV['IRC'] || STDIN.gets
+  print "Join #Channel: #{ENV['CHANNEL']} "
+  channel = ENV['CHANNEL'] || STDIN.gets
+  print "IRC NickName : #{ENV['NICK']} "
+  nick    = ENV['NICK'] || STDIN.gets
+  IRC::Qikbot.chat irc.chomp, channel.chomp, nick.chomp
+end
